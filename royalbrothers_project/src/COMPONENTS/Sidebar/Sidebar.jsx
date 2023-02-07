@@ -19,7 +19,7 @@ import {
   
     return (
       <>
-        <Button ref={btnRef} backgroundColor="white" onClick={onOpen} marginRight="6px" border="none" >
+        <Button ref={btnRef} backgroundColor="white" onClick={onOpen} marginRight="6px" border="none" cursor="pointer" >
         <HamburgerIcon w={30} h={30} />
         </Button>
         <Drawer
