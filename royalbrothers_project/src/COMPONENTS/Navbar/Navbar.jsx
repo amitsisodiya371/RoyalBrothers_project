@@ -1,6 +1,6 @@
 import { Text, Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-
+import DrawerExample from "../Sidebar/Sidebar";
 export default function Nav() {
   return (
     <>
@@ -45,7 +45,7 @@ export default function Nav() {
             </a></div>
           </div>
         </div>
-        <div style={{ display: "flex", flexDirection: "row", marginTop:"-3px" }}>
+        <div style={{ display: "flex", flexDirection: "row",boxShadow:"rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px", marginTop:"-3px" }}>
           <div
             style={{
               width: "200px",
@@ -54,7 +54,7 @@ export default function Nav() {
               marginLeft: "10px",
             }}
           >
-            {/* <DrawerExample /> */}
+            <DrawerExample />
             <Link to="/">
               
               <img
@@ -184,7 +184,7 @@ export default function Nav() {
             {/* <> */}
             <Button height="40px" width="90px" backgroundColor="transparent">
               Login
-            </Button>
+            </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <Button height="40px" width="90px" backgroundColor="#FDB605">
               {" "}
               Sign up
