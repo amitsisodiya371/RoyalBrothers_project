@@ -8,7 +8,6 @@ var CityDetails =[
         {ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/022/original/Alleppy_817ae817e23cf6708ce38c850cc42e6d.jpg",	
         City_name : "Alleppey"},
 
-        
         {ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/101/original/Amritsar.jpg",
         City_name : "Amritsar"},
 
