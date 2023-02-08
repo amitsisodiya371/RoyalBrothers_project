@@ -1,26 +1,17 @@
 import { Text, Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import "./Navbar.css"
 import DrawerExample from "../Sidebar/Sidebar";
 export default function Nav() {
   return (
-    <>
-      <div><p
-        style={{
-          backgroundColor: "#fed250",
-          padding: "5px",
-          marginTop: "0px",
-          fontSize: "14px",
-        }}
-      >
-        Our delay policy has been changed  <a href="">Know more</a></p>
-         {/* <a href="/">Know more<a/></div> */}
-      
-      <div
+    <div>
+      <div>
+        <p id="navrow1">
+        Our delay policy has been changed  <a href="/">Know more</a></p>
+      <div id="navrow2"
         style={{
           display: "flex",
           flexDirection: "column",
-          position: "fixed",
-          width: "100%",
           backgroundColor: "white",
         }}
       >
@@ -28,8 +19,7 @@ export default function Nav() {
           style={{
             textAlign: "right",
             width: "100%",
-            marginTop: "5px",
-            marginBottom: "5px",
+            margin: "5px 0 5px 0",
             borderBottom: "0.1px solid lightgrey",
           }}
         >
@@ -40,20 +30,13 @@ export default function Nav() {
             ></img></div>
             <Text margin="-1px 5px">+919368155634 / +919507524066</Text>
             <Text margin="-1px 8px">|</Text>
-           <div style={{ marginRight:"6px", textDecoration:"none",color:"black"}}> <a  href="/" >
+            <Link to="/"> <div style={{ marginRight:"6px", textDecoration:"none",color:"black"}}>
               Chat Now
-            </a></div>
+            </div></Link>
           </div>
         </div>
-        <div style={{ display: "flex", flexDirection: "row",boxShadow:"rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px", marginTop:"-3px" }}>
-          <div
-            style={{
-              width: "200px",
-              display: "flex",
-              flexDirection: "row",
-              marginLeft: "10px",
-            }}
-          >
+        <div id="nav3">
+          <div id="drawlogo">
             <DrawerExample />
             <Link to="/">
               
@@ -65,36 +48,26 @@ export default function Nav() {
               />
             </Link>
           </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              width: "55%",
-              alignItems: "center",
-              justifyContent: "space-evenly",
-            }}
-          >
+          <div id="navpagecont">
             <div>
-              <Link to="/tariff">
-                <Text  style={{fontSize:"16px", fontWeight:"500", textDecoration:"none",color:"black"}}>
+              <Link to="/tarrif" id="navlink">
+                <Text  >
                   Tariff
                 </Text>
               </Link>
             </div>
             <div>
-              <Link to="/store">
-                {" "}
-                <Text  style={{fontSize:"16px", fontWeight:"500", textDecoration:"none",color:"black"}} >
+              <Link to="/store" id="navlink">
+                
+                <Text   >
                   Store
                 </Text>
               </Link>
             </div>
-            <div
-              style={{ display: "flex", flexDirection: "row", width: "150px", }}
-            >
-              <Link to="/what's new">
-                {" "}
-                <Text style={{fontSize:"16px", fontWeight:"500", textDecoration:"none",color:"black"}}>
+            <div id="whatnew">
+              <Link to="/what's new" id="navlink">
+                
+                <Text >
                   What's New?
                 </Text>
               </Link>
@@ -105,21 +78,19 @@ export default function Nav() {
               ></img>
             </div>
             <div>
-              <Link to="/offers">
-                {" "}
-                <Text style={{fontSize:"16px", fontWeight:"500", textDecoration:"none",color:"black"}}>
+              <Link to="/offers" id="navlink">
+                <Text >
                   Offers
                 </Text>
               </Link>
-            </div>
-            <div
-              style={{ display: "flex", flexDirection: "row", width: "200px" }}
+            </div >
+            <div id="partner"
+              
             >
-              <Link to="/partner with us">
-                {" "}
-                <Text style={{fontSize:"16px", fontWeight:"500", textDecoration:"none",color:"black"}}>
-                  Partner With Us
-                </Text>
+              <Link to="/partner with us" id="navlink">
+               
+                <Text>Partner With us</Text> 
+                
               </Link>
               <img
                style={{ height: "15px",fontWeight:"500px", marginTop: "19px", marginLeft: "10px" }}
@@ -129,29 +100,18 @@ export default function Nav() {
             </div>
           </div>
           <div>
-            <div
-              style={{
-                height: "40px",
-                width: "200px",
-                display: "flex",
-                flexDirection: "row",
-                marginLeft: "10px",
-                border: "1px solid black",
-                marginTop: "10px",
-                borderRadius: "4px",
-                borderColor: "#FDB605",
-              }}
-            >
+            <Link to="/user-location" style ={{textDecoration:"none"}}>
+            <div id="location">
               <img
-                style={{ height: "80%", marginLeft: "10px", marginTop: "4px" }}
-                src="https://raw.githubusercontent.com/Kamleshfw11179/royalBrothersimages/main/Vector%20(2).png"
+               style={{ height: "70%",  margin:"5px 0 0 10px",backgroundColor:"#f1b826",borderRadius:"50%" }}
+                src="https://img.icons8.com/ios/1x/place-marker--v2.png"
                 alt="location"
               ></img>
-              <Text
-                fontSize="13px"
-                fontWeight="500"
-                marginTop="10px"
-                marginLeft="18px"
+              <Text style={{
+                fontSize:"15px",
+                fontWeight:"500",
+                margin:"10px 0 0 18px",
+                }}
               >
                 Agra
               </Text>
@@ -159,33 +119,22 @@ export default function Nav() {
                 style={{
                   height: "15px",
                   marginTop: "10px",
-                  position: "absolute",
-                  zIndex: "-100",
+                  // position: "absolute",
                   marginLeft: "13%",
                 }}
                 // style={{ height: "10px",fontWeight:"500px", marginTop: "19px", marginLeft: "10px" }}
                 src="https://cdn-icons-png.flaticon.com/128/318/318426.png"
                 alt="arrow"
               ></img>
-            </div>
+            </div></Link>
           </div>
-          <div
-            style={{
-              marginLeft: "30px",
-              marginRight: "10px",
-              width: "200px",
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
+          <div id="logsign">
             {/* {token===""? */}
             {/* <> */}
-            <Button height="40px" width="90px" backgroundColor="transparent">
+            <Button height="35px" width="90px" backgroundColor="transparent" borderRadius="8px">
               Login
             </Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Button height="40px" width="90px" backgroundColor="#FDB605">
+            <Button height="35px" width="90px" backgroundColor="#FDB605" borderRadius="8px">
               {" "}
               Sign up
             </Button>
@@ -198,6 +147,6 @@ export default function Nav() {
         {/* <hr style={{height:"2px",borderWidth:"0",color:"black",backgroundColor:"gray"}}></hr> */}
       </div>
       </div>
-    </>
+    </div>
   );
 }

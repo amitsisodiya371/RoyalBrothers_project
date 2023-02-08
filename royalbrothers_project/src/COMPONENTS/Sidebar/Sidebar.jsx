@@ -16,7 +16,17 @@ import {
  export default function DrawerExample() {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
-  
+   const styles={
+    border:"none",
+    textAlign:"left",
+    height:"40px",
+    backgroundColor:"white",
+    borderRadius:"none",
+    fontWeight:"400",
+    borderBottom:"1px solid #c4c4c4",
+    scrollBehavior: "auto",
+    cursor:"pointer"
+   }
     return (
       <>
         <Button ref={btnRef} backgroundColor="white" onClick={onOpen} marginRight="6px" border="none" cursor="pointer" >
@@ -31,24 +41,22 @@ import {
           <DrawerOverlay />
           <DrawerContent>
            
-            {/* <DrawerHeader></DrawerHeader> */}
+            <DrawerHeader></DrawerHeader>
   
-            <DrawerBody display="flex" flexDirection="column" marginTop="50px" width="20%">
-            <DrawerCloseButton height="40px" textAlign="right" />
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Tariff</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Store</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Partner With Us</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Tariff</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Tariff</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Tariff</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Tariff</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Tariff</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Tariff</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Tariff</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Tariff</Button>
-             <Button textAlign="left" height="40px" backgroundColor="white"  borderRadius="none" fontWeight="400" borderBottom="1px solid #c4c4c4">Tariff</Button>
+            <DrawerBody display="flex" flexDirection="column" arginTop="1px" width="20%">
+            <DrawerCloseButton style={styles} />
+             <Button style={styles}>Tariff</Button>
+             <Button style={styles}>Store</Button>
+             <Button style={styles}>Carriers</Button>
+             <Button style={styles}>Partner With Us</Button>
+             <Button style={styles}>Blog</Button>
+             <Button style={styles}>Indian Bike Routes</Button>
+             <Button style={styles}>About us</Button>
+             <Button style={styles}>Terms and conditions</Button>
+             <Button style={styles}>privacy policy</Button>
+             <Button style={styles}>FAQ</Button>
+             <Button style={styles}>Reach us</Button>
              </DrawerBody>
-  
             <DrawerFooter>
             </DrawerFooter>
           </DrawerContent>
