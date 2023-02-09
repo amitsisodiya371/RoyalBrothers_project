@@ -1,0 +1,26 @@
+#biketext>h1{
+    color: #eba904;
+    font-size: 40px;
+}
+#biketext>p{
+    /* color: brown;  */
+    font-size: 15px;
+}
+#bikedetails{
+    margin-left: 10%;
+    box-shadow: 0 0 0.7px black;
+    width:350px;
+}
+#schdule{
+    margin-left: 10%;
+    box-shadow: 0 0 1px black;
+    border-radius: 0 0 5px 5px;
+    width:350px;
+    margin-top: 0px;
+    /* padding: 30px; */
+}
+#bikeimg{
+    width: 220px;
+    height: 180px;
+   
+}

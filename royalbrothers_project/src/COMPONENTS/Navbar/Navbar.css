@@ -52,18 +52,18 @@
     flex-direction: row; 
     width: 122px;
 }
-#whatnew:hover{
+/* #whatnew:hover{
     background-color: #f1b826;
-}
+} */
 
 #partner{
     display: flex; 
     flex-direction: row; 
     width: 140px;
 }
-#partner:hover{
+/* #partner:hover{
     background-color: #f1b826;
-}
+} */
 #location{
         height: 40px;
         width: 150px;
