@@ -1,97 +1,41 @@
 *{
     font-family: 'Mulish', sans-serif;;
   }
-.cram{
-    width:90%;
-    margin: auto;
-    height:100px;
-}
+  #heading{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .sliderContainer{
+    width: 100%;
+    /* height: 100; */
+    margin-top: -106px;
+    z-index: -1;
 
-.cra2div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-
-
-.craImgdiv{
-    width:35%;
-    height:100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    border:1px solid #c4c4c4;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.cra2Img{
-    margin-top: 15px;
-    border-radius: 4px;
-}
-
-.divIa{
+  }
+  .sliderCard{
     width:100%;
     display: flex;
     flex-direction: row;
 }
-.divIa>img{
-    width:60%
-}
-.divIa1{
-    height:500px;
-    width:1300px;
-    padding-top: 300px;
-    padding-left: 100px;
-    padding-right: 50px;
-}
 
-.divIa1>p:nth-child(1){
-    font-size: 26px;
-    font-weight: 500;
-    color:black
-}
-.divIa1>p:nth-child(2){
-    font-size: 14px;
-    font-weight: 500;
-    color:rgba(68, 68, 68, 1)
-}
-.divIaa{
-    width:100%;
-    display: flex;
-    flex-direction: row;
-}
-.divIa>img{
-    width:60%
-}
-.divIa1a{
+.sliderCard_p{
     height:500px;
     width:700px;
-    padding-top: 300px;
-    padding-left: 100px;
-    padding-right: 150px;
+    padding-top: 200px;
+    padding-left: 50px;
+    padding-right: 200px;
     position: absolute;
     z-index: 1;
 }
 
-.divIa1>p:nth-child(1){
+.sliderCard_p>p:nth-child(1){
     font-size: 26px;
     font-weight: 500;
     color:black
 }
-.divIa1>p:nth-child(2){
-    font-size: 14px;
-    font-weight: 500;
-    color:rgba(68, 68, 68, 1)
-}
-.divIa1a>p:nth-child(1){
-    font-size: 26px;
-    font-weight: 500;
-    color:black
-}
-.divIa1a>p:nth-child(2){
+.sliderCard_p>p:nth-child(2){
     font-size: 14px;
     font-weight: 500;
     color:rgba(68, 68, 68, 1)

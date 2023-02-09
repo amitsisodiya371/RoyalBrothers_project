@@ -4,14 +4,16 @@ import { Carousel } from "react-bootstrap";
 export default function Slider() {
   return (
     <>
-      <Carousel className={slider.mainCra} indicators={true} variant="dark">
-        <Carousel.Item interval={1000}>
-          <div className={slider.divIaa}>
-            <div className={slider.divIa1a}>
-              <p>#Ready to serve in 40+ cities</p>
+      <p id={slider.heading}>WE BELIEVE IN QUALITY</p>
+      <Carousel className={slider.sliderContainer} nextIcon={false} prevIcon={false} indicators={true} variant="dark">
+        
+        <Carousel.Item interval={1500}>
+          <div className={slider.sliderCard}>
+            <div className={slider.sliderCard_p}>
+              <p>Ready to serve you in 40+ cities!</p>
               <p>
-                Think of a city we are almost there.The next time you plan on
-                exploring a city transport is sorted with royalbrothers.
+                Think of a city & we are almost there.The next time you plan on
+                exploring a city, know that your means of transport is sorted with Royal Brothers. #BhaiHaiNa
               </p>
             </div>
             <img
@@ -22,13 +24,13 @@ export default function Slider() {
             />
           </div>
         </Carousel.Item>
-        <Carousel.Item interval={1000}>
-          <div className={slider.divIaa}>
-            <div className={slider.divIa1a}>
-              <p>Bikes Maintained So Good.</p>
+        <Carousel.Item interval={1500}>
+          <div className={slider.sliderCard}>
+            <div className={slider.sliderCard_p}>
+              <p>Bikes Maintained So Good, you will feel it is brand-new</p>             
               <p>
-                We obsses on giving you the best possible experience.That is why
-                we have well bikes 24/7.
+                We obsess on giving you the best possible experience. 
+                This is not only with well serviced bikes but also with a 24/7 support team available just a call away.
               </p>
             </div>
             <img
@@ -39,19 +41,19 @@ export default function Slider() {
             />
           </div>
         </Carousel.Item>
-        <Carousel.Item interval={1000}>
-          <div className={slider.divIa}>
-            <div className={slider.divIa1}>
-              <p>We’re socially celebrated</p>
+        <Carousel.Item interval={1500}>
+          <div className={slider.sliderCard}>
+            <div className={slider.sliderCard_p}>
+              <p>We're socially celebrated</p>
               <p>
-                Our customer centric approch has got us amazing reviews. Be it
-                any platform, you will see many users recommending our service
+                Our customer centric approach has got us amazing reviews. Be it
+                any platform, you will see many users recommending our service.
               </p>
             </div>
-            <img
+            <img 
               className="d-block w-60 "
-              style={{ height: "600px" }}
-              src="https://raw.githubusercontent.com/Kamleshfw11179/royalBrothersimages/main/media/slide1.png"
+              style={{ height: "600px", width:"100%" }}
+              src="https://d36g7qg6pk2cm7.cloudfront.net/assets/icons/slide-one-8c7f76cbbc58a89e95e8fcc1ab03d3d4cf12ef680989755fcf01f3a725d5d775.jpg"
               alt="Third slide"
             />
           </div>
