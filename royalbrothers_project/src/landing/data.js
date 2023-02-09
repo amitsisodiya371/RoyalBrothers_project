@@ -1,4 +1,4 @@
-var CityDetails =[
+export let data=[
         {ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/039/original/Agra_new.jpg",
         City_name : "Agra"},
 
@@ -12,11 +12,11 @@ var CityDetails =[
         City_name : "Amritsar"},
 
         {ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/017/original/Andaman-_-Nicobar_b5a3ba5c464968f274dfb7a98bcc4dbc.jpg",
-        City_name : "Andaman Nicobar"}
-        ,{ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/001/original/Bangalore_1cf1aa53741a94edc3532f7b2b583c52.jpg"
-            
-        ,City_name : "Bangalore"
-        }
+        City_name : "Andaman Nicobar"},
+        
+        {ImgCity_URL : "https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/001/original/Bangalore_1cf1aa53741a94edc3532f7b2b583c52.jpg", 
+        City_name : "Bangalore"}
+        
         ,{ImgCity_URL :"https://d3vp2rl7047vsp.cloudfront.net/cities/round_images/000/000/051/original/PHOTO-2021-02-01-15-55-27.jpg"
             
          ,City_name : "Bangalore Airport"
