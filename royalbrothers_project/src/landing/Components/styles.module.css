@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+/* cities */
 .main{
     height: 100vh;
     width: 100%;
@@ -32,6 +33,7 @@
     
 }
 .logo>p{
+    margin-top: 15px;
     font-weight: 500;
     font-size: 14px;
 }
@@ -94,7 +96,8 @@
     text-align: center;
     font-size: 14px;
     color: gray;
-    font-weight: 500;    
+    font-weight: 500; 
+    padding: 15px 0;   
     border-top:1px solid #c4c4c4
     
 }
@@ -131,7 +134,7 @@
 }
 .inputBox >div>p{
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 600;    
     padding-top: 10px;
     margin-bottom: 5px;
 }
@@ -154,4 +157,81 @@
 }
 .inputBox>button:hover{
     background-color: #fdd34d;
+}
+
+/* bar */
+
+#barDiv{
+    display: flex;
+    width:50%;
+    margin: auto;
+    flex-direction: row;
+    text-align: center;
+    gap: 30px;
+}
+.barCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.barCard>img{
+    width: 25px;
+}
+.barCard>p{
+    font-size: 12px;
+    padding-top: 15px;
+}
+
+/* fleet */
+
+#fleetHeading{
+    width: fit-content;
+    margin: auto;
+    border-bottom: 3px solid #fdd34d;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.fleetContainer{
+   display: flex;   
+   gap: 2%;
+   justify-content: space-evenly;
+   width: 80%;
+    margin: 20px auto;
+    justify-content: center;
+}
+.fleetCard{
+   
+    background-color: #f7fafc;
+    border-radius: 6px; 
+    width: 350px;
+    height: 200px; 
+
+   
+}
+.fleetCard>p{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+}
+.fleetCard> img{
+    width: 15rem;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.fleetCard>button{
+    width: 100%;
+    font-size: 14px;
+    margin-top: 8px;
+    border: none;
+    background-color: #fdd34d;
+}
+#fleetFooter{
+    font-size: 12px;
+    text-align: center;
+    margin: 50px 0;
 }

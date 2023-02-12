@@ -1,14 +1,19 @@
-import styles from "./styles.module.css";
-import {data} from "./data";
+import styles from "./Components/styles.module.css";
+import {data} from "./Components/data";
 import { useContext } from "react";
-
-
+import { useNavigate } from "react-router-dom";
+import Home from "./Home";
 const Cities = () => {
     
-    function setName(data){
-        localStorage.setItem("location", JSON.stringify(data));
-        // setLocation(data);
-    }
+    // function setName(data){
+    //     localStorage.setItem("location", JSON.stringify(data));
+    //     // setLocation(data);
+    // }
+const navigate=useNavigate();
+
+const navigateToHome=()=>{
+    navigate('./Home');
+}
 
   return (
     <div className={styles.main}>
@@ -26,11 +31,14 @@ const Cities = () => {
         <div className={styles.cards}>
             {data.map((e)=>{
                return(
-                 <div className={styles.card}>
-                    <img
+                 <div  className={styles.card}>
+                    <img 
                     onClick={()=>{
                         // state(false);
-                        setName(e.City_name);
+                        localStorage.setItem("location", JSON.stringify(e.City_name));
+                        // setName(e.City_name);
+                        navigateToHome();
+
                     }} 
                      src={e.ImgCity_URL} alt={e.City_name}  />
                     <p>{e.City_name }</p>
