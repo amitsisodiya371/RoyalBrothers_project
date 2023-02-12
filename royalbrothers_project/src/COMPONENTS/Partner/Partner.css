@@ -1,0 +1,16 @@
+#backimg{
+    height: 70px;
+    width: 100%;
+    color: white;
+    text-align: left;
+    /* align-items: center; */
+    padding: 100px 0px 100px 40px;
+    background-image: url("https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=400");
+}
+#backimg img{
+    width: 100%;
+    /* height: 100%; */
+}
+#text{
+    margin: 80px 0px 0 10px;
+}
