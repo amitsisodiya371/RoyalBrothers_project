@@ -4,6 +4,9 @@ import Fleet from "./Components/Fleet";
 import Slider from "./Components/Slide/Slider";
 import Slider2 from "./Components/Slide/Slider2";
 import styles from "./Components/styles.module.css";
+import Navbar from "../COMPONENTS/Navbar/Navbar";
+import AllRoutes from "../All ROUTES/Routes/Allroutes";
+import Footer from "../COMPONENTS/Footer/Footer";
 
 export default function Home() {
 const [pickup, setPickup]=useState({
@@ -32,6 +35,9 @@ function handleDrop(e){
 
   return (
     <>
+    <Navbar/>
+    <AllRoutes/>
+    
         <div className={styles.homeContainer}>
         <img
           src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page_web-986bff386c60dfaf5106b17c40f7c04228518a95dff9b04ccd88c81465cec0be.jpg"
@@ -58,6 +64,7 @@ function handleDrop(e){
       <Fleet/>
       <Slider/>
       <Slider2/>
+      <Footer/>
     </>
     
   );
