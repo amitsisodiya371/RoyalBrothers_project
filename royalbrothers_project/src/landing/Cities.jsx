@@ -12,6 +12,7 @@ const Cities = () => {
 const navigate=useNavigate();
 
 const navigateToHome=()=>{
+    
     navigate('./Home');
 }
 
@@ -50,6 +51,7 @@ const navigateToHome=()=>{
             <p>SELECT CITY TO CONTINUE</p>
         </div>
     </div>
+    
     </div>
     
   )

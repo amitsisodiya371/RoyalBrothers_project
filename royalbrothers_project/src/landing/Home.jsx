@@ -19,14 +19,17 @@ const [dropOff,setDropoff] = useState({
 function handlePickup(e){
   const{name, value}=e.target;
   setPickup({...pickup, [name]:value})
-  console.log(pickup);
+  // console.log(pickup);
+  localStorage.setItem("pickUp", JSON.stringify(pickup));
 }
 
 function handleDrop(e){
   const {name, value}=e.target;
   setDropoff({...dropOff, [name]:value})
-  console.log(dropOff);
+  // console.log(dropOff);
+  localStorage.setItem("dropOff", JSON.stringify(dropOff));
 }
+
   return (
     <>
         <div className={styles.homeContainer}>
@@ -34,7 +37,7 @@ function handleDrop(e){
           src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page_web-986bff386c60dfaf5106b17c40f7c04228518a95dff9b04ccd88c81465cec0be.jpg"
           alt=""
         />
-        <form className={styles.inputBox}>
+        <div className={styles.inputBox}>
           <p id={styles.heading}>Search your next ride</p>
           <div>
             <p>Pickup</p>
@@ -45,11 +48,11 @@ function handleDrop(e){
           <div>
             <p>Dropoff</p>
             <input type="date" name="start" value={dropOff.start} onChange={handleDrop} placeholder="Date"></input>&nbsp;
-                    <input type="time" name="end" value={dropOff.end} onChange={handleDrop} className={styles.times} placeholder="Time"></input>
+            <input type="time" name="end" value={dropOff.end} onChange={handleDrop} className={styles.times} placeholder="Time"></input>
           </div>
           <br /><br />
           <button >Search</button>
-        </form>
+        </div>
       </div>
       <Bar/>
       <Fleet/>
