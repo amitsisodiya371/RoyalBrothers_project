@@ -1,16 +1,12 @@
 
 import './App.css';
-import Navbar from './COMPONENTS/Navbar/Navbar';
-import { BrowserRouter } from 'react-router-dom';
-import AllRoutes from './All ROUTES/Routes/Allroutes';
+import Authentication from './components/Authentication/Authentication';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-    <Navbar/>
-    <AllRoutes/>
-    </BrowserRouter>
-    </div>
+     <Authentication/>
+      
+      </div>
   );
 }
 
