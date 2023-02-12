@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import { useDisclosure } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import {
@@ -18,14 +19,12 @@ import {
     const btnRef = React.useRef()
    const styles={
     border:"none",
-    textAlign:"left",
     height:"40px",
     backgroundColor:"white",
-    borderRadius:"none",
     fontWeight:"400",
     borderBottom:"1px solid #c4c4c4",
-    scrollBehavior: "auto",
-    cursor:"pointer"
+    cursor:"pointer",
+    width:"100%",
    }
     return (
       <>
@@ -45,8 +44,8 @@ import {
   
             <DrawerBody display="flex" flexDirection="column" arginTop="1px" width="20%">
             <DrawerCloseButton style={styles} />
-             <Button style={styles}>Tariff</Button>
-             <Button style={styles}>Store</Button>
+             <Link to="/tarrif" style={{textDecoration:"none"}} ><Button style={styles} >Tariff</Button></Link>
+             <Link to="/store" style={{textDecoration:"none"}} ><Button style={styles}>Store</Button></Link>
              <Button style={styles}>Carriers</Button>
              <Button style={styles}>Partner With Us</Button>
              <Button style={styles}>Blog</Button>

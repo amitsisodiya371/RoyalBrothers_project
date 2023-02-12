@@ -3,6 +3,22 @@ import { Link } from "react-router-dom";
 import "./Navbar.css"
 import DrawerExample from "../Sidebar/Sidebar";
 export default function Nav() {
+
+//   var btn = document.getElementById("disappear")
+// function divAppear() {
+//     var cll = document.getElementById("shop_hover");
+//     cll.style.display = "grid";
+//     cll.style.background = "white";
+// }
+// btn.addEventListener("mouseover", divAppear);
+
+// // work on div of shop_hover =>
+
+// var cll = document.getElementById("shop_hover");
+// function divDisappear() {
+//         cll.style.display = "none";
+// }
+// cll.addEventListener("mouseleave", divDisappear);
   return (
     <div>
       <div>
@@ -50,14 +66,14 @@ export default function Nav() {
           </div>
           <div id="navpagecont">
             <div>
-              <Link to="/tarrif" id="navlink">
+              <Link to="/tarrif" className="navlink">
                 <Text  >
                   Tariff
                 </Text>
               </Link>
             </div>
             <div>
-              <Link to="/store" id="navlink">
+              <Link to="/store" className="navlink">
                 
                 <Text   >
                   Store
@@ -65,12 +81,17 @@ export default function Nav() {
               </Link>
             </div>
             <div id="whatnew">
-              <Link to="/what's new" id="navlink">
+              <Link to="/what's new" className="navlink">
                 
                 <Text >
                   What's New?
                 </Text>
-              </Link>
+                {/* <div id="shop_hover">
+                <div id="first">
+                  <p><Link to="/offers">Store</Link></p>
+                </div>
+                </div> */}
+                </Link>
               <img
                 style={{ height: "15px",fontWeight:"500px", marginTop: "19px", marginLeft: "10px" }}
                 src="https://cdn-icons-png.flaticon.com/128/318/318426.png"
@@ -78,7 +99,7 @@ export default function Nav() {
               ></img>
             </div>
             <div>
-              <Link to="/offers" id="navlink">
+              <Link to="/offers" className="navlink">
                 <Text >
                   Offers
                 </Text>
@@ -87,10 +108,15 @@ export default function Nav() {
             <div id="partner"
               
             >
-              <Link to="/partner with us" id="navlink">
+              <Link to="/partner with us" className="navlink">
                
                 <Text>Partner With us</Text> 
-                
+                {/* <div id="shop_hover">
+                <div id="first">
+                    <p><Link to="/offers">Earn with us</Link></p>
+                    <p><Link to="/offers">Own a franchise</Link></p>
+                </div>
+                </div> */}
               </Link>
               <img
                style={{ height: "15px",fontWeight:"500px", marginTop: "19px", marginLeft: "10px" }}
