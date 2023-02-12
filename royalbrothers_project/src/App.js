@@ -13,9 +13,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar/>
-    <AllRoutes/>
-    <Footer/>
+      <Cities/>
       </BrowserRouter>
         
         
