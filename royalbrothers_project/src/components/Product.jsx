@@ -1,52 +1,33 @@
 import styles from './Product.module.css';
 import { Button } from "@chakra-ui/react"
+import Navbar from "../amit/Navbar/Navbar"
+import Footer from "../amit/Footer/Footer"
 
-// import { bikess } from "./data"
-// import { useContext,useEffect,useState } from "react"
-// import { AppContext } from "../appContext/AppContextProvider"
-// import { useNavigate } from "react-router"
-// import {useSelector,useDispatch} from "react-redux"
-// import {getData} from "../redux/action"
-// import axios from "axios"
+import { useNavigate } from "react-router-dom";
+
+
+  
+
+
 export default function Product(){
-    // const dispatch = useDispatch();
-    // useEffect(()=>{
-    //     const pickUp = JSON.parse(localStorage.getItem("pick"));
-    //     const dropl = JSON.parse(localStorage.getItem("drop"));
-    //     const location = JSON.parse(localStorage.getItem("loc"));
-        // const pic = Number(pickUp.end.split(":")[0]);
-        // const drops =  Number(dropl.end.split(":")[0])-12;
-    //     setdTime("11:30")
-    //     setPick("3:00");
-    //     setDrop(dropl)
-    //     setLocation("Agra")
-    //     axios.get(`https://royal-brother.herokuapp.com/bike/${location}/${pic}`)
-    //     .then((res)=>{
-    //         dispatch(getData(res.data))
-    //     })
-    // },[])
-    // const {pick,drop,location,setDrop,setPick,setLocation,setS} = useContext(AppContext)
-    // const [dtime,setdTime] = useState(0)
-    // const navigate = useNavigate();
-    // function handleNavigate(data){
-    //     const token = JSON.parse(localStorage.getItem("token"))
-    //     localStorage.setItem("id",JSON.stringify(data))
-    //     setS((prev)=>prev-1)
-    //     if(token!==""){
-    //         navigate("/checkout")
-    //     }else{
-    //         navigate("/validate")
-    //     }
-    // }
-    // const {bikes} = useSelector(state=>state)
+    const pay=useNavigate();
+    const PaymentD=()=>{
+    
+        pay('/Home/Product/PaymentDetails');
+    }
+   
     return(
+        
+        
+        
         <div className={styles.sMain}>
+            <Navbar />
         <img src="https://raw.githubusercontent.com/Kamleshfw11179/royalBrothersimages/main/Header%20of%204%20or%207%20days.png" alt="header"></img>
         <div className={styles.sMain1}>
         <div className={styles.sMain11}>
         <div className={styles.sMain11d}>
         <div className={styles.filter}>
-        <p className='fill'>Filters</p>
+        {/* <p className='fill'>Filters</p> */}
        
         </div>
             <input placeholder="Search Date & Time"></input>
@@ -147,7 +128,7 @@ export default function Product(){
             <div className={styles.hello}>
                 <div key="1" className={styles.biTile}>
                 <div className={styles.biHed}>
-                    <img src="https://raw.githubusercontent.com/Kamleshfw11179/royalBrothersimages/main/image%2082.png" alt="best"></img>
+                    {/* <img src="https://raw.githubusercontent.com/Kamleshfw11179/royalBrothersimages/main/image%2082.png" alt="best"></img> */}
                     <p>zero deposit</p>
                 </div>
                 <div className={styles.bikeInfo}>
@@ -177,7 +158,7 @@ export default function Product(){
                 <p>85 km included</p>
                 </div>
                 <div className={styles.lastB2}>
-                <Button marginLeft="30px" width="130px" backgroundColor="#FDB605" onClick={()=>{}}>BOOK</Button>
+                <Button marginLeft="30px" width="130px" backgroundColor="#FDB605" onClick={()=>{PaymentD()}}>BOOK</Button>
                 </div>
                 </div>
                 </div>
@@ -186,8 +167,10 @@ export default function Product(){
             
         </div>
         </div>
+        <Footer />
         </div>
-       
+        
+        
     )
 
 

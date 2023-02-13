@@ -1,0 +1,119 @@
+#navrow1{
+        background-color: #fed250;
+        padding: 5px;
+        margin-top: 0px;
+        font-size: 13px
+    
+}
+#nawrow2{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+        
+    }
+#nav3{
+     display: flex;
+     box-shadow:rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+     margin-top:-3px 
+          
+}
+#drawlogo{
+    
+     width: 200px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+    
+}
+#navpagecont{
+        display: flex;
+        flex-direction:row;
+        width: 55%;
+        align-items: center;
+        justify-content:space-evenly;
+}
+
+.navlink{
+     font-size:16px;
+    font-weight:500;
+    text-decoration:none; 
+    color:black;
+
+}
+.navlink:hover{
+    color: #f1b826;
+    /* background-color: #f1b826; */
+    /* position: fixed; */
+}
+#whatnew{
+    display: flex; 
+    flex-direction: row; 
+    width: 122px;
+}
+#whatnew:hover{
+    color: #f1b826;
+}
+
+#partner{
+    display: flex; 
+    flex-direction: row; 
+    width: 140px;
+}
+#partner:hover{
+    color: #f1b826;
+}
+#location{
+        height: 40px;
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        border: 1px solid black;
+        margin-top: 10px;
+        border-radius: 4px;
+        border-color:  #f1b826;
+        color: black;
+}
+#location:hover{
+ background-color: #f1b826;
+}
+#logsign{
+        margin: 0 10px 0 30px;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+}
+#logsign Button{
+border: 0.5px solid  #f1b826;
+
+}
+
+#shop_hover {
+    width: 90%;
+    display: none;
+    margin: auto;
+    /* grid-template-columns: 200px 50px 200px 200px 300px; */
+    padding-left: 200px;
+    position: fixed;
+    top: 140px;
+    z-index: 2;
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: #EEEEEE;
+}
+
+#shop_hover Link {
+    text-decoration: none;
+    color: rgba(18, 40, 76, 0.6);
+    font-size: 14px; 
+}
+
+#shop_hover Link:hover {
+    color: #12284c;
+    size: 10px;
+  }

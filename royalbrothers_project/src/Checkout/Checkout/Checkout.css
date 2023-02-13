@@ -1,0 +1,642 @@
+.App {
+  text-align: center;
+}
+.Main_Container_page {
+  display: flex;
+  padding: 3%;
+}
+.inner_summary_div {
+  padding: 3%;
+}
+
+/* <<<<<<<<<<<<< Payment Page section >>>>>>>>>>>>>>>. */
+.Payments_page {
+  text-align: left;
+  width: 60%;
+  height: 30%;
+  margin: auto;
+  /* padding: 3%; */
+  box-shadow: 0px 0px 5px green;
+  border-radius: 5px;
+}
+
+/* <<<<<<<<<<<<<  CheckOut side Payment Page section >>>>>>>>>>>>>>>. */
+.CheckOut_Payment_page {
+  text-align: left;
+  width: 20%;
+  height: 10%;
+  margin: 30px auto;
+  padding: 3%;
+  box-shadow: 0px 0px 5px green;
+  border-radius: 5px;
+}
+
+.make_payment_btn {
+  width: 80%;
+  border: none;
+  background-color: rgb(254, 210, 80);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* ------------<<<<<<<<<<<<<<<<<<<<<<<<< Pyement Confirm section>>>>>>>>>>>>------------- */
+* {
+  font-family: "Mulish", sans-serif;
+}
+.MainBody {
+  display: flex;
+  flex-direction: row;
+  width: 1040px;
+  height: 461px;
+  margin-top: 120px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+  font-family: "Mulish", sans-serif;
+}
+.Payment {
+  display: flex;
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 925px;
+  height: 461px;
+  margin-left: 101px;
+}
+.compeletPaymentsM {
+  position: absolute;
+  width: 925px;
+  height: 38px;
+  background: #c4c4c4;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.compeletPaymentsM1 {
+  position: absolute;
+  height: 38px;
+  width: 295px;
+  background: #c4c4c4;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.All_paymments_Details {
+  align-items: center;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  height: 22px;
+  margin-left: 24px;
+  top: 8px;
+  /* line-height: 22px; */
+}
+.box1 {
+  width: 232px;
+  height: 250px;
+  margin-top: 40px;
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+}
+.P1 {
+  width: 232px;
+  height: 40px;
+  background: #ffffff;
+  box-shadow: 0px 2px 2px rgba(15, 11, 11, 0.12);
+  margin-bottom: 12px;
+}
+.P11 {
+  width: 232px;
+  height: 40px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  background: #c4c4c4;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.choose_payment_method {
+  text-align: center;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 22px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.img1 {
+  width: 63px;
+  height: 18px;
+  margin-left: 90px;
+}
+.box22 {
+  width: 650px;
+  margin-left: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+.Otp1 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: black;
+}
+.inp5 {
+  position: static;
+  width: 276px;
+  height: 41px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  text-align: center;
+}
+.btn2 {
+  width: 100px;
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background: #fdb605;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  cursor: pointer;
+}
+.note3 {
+  margin-top: 80px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+/* Second div styling */
+.Summary {
+  /* border: 1px solid blue; */
+  width: 295px;
+  margin-left: 1047px;
+}
+.total_amaount_payable {
+  text-align: center;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+.loading {
+  width: 280px;
+  height: 300px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.note {
+  position: absolute;
+  width: 1239px;
+  height: 40px;
+  margin-left: 101px;
+  margin-top: 10px;
+}
+.noteTxt {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* ------------------<<<<<<<<<<< All Card Payment section>>>>>>>>>>.----------- */
+.mainBod {
+  width: 90%;
+  margin: auto;
+  height: 470px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  /* box-shadow: 0px 0px 10px green; */
+}
+.mainBod1 {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  border-bottom: 1.5px solid #c4c4c4;
+  /* border-radius: 5px; */
+  box-shadow: 0px 0px 5px green;
+}
+
+.mainBod2 {
+  width: 30%;
+  height: 100%;
+  /* border-radius: 5px; */
+}
+.Choose_payments_mthd {
+  width: 97.5%;
+  height: 30px;
+  background-color: #c4c4c4;
+  padding-left: 20px;
+  padding-top: 2px;
+  /* border-radius: 5px; */
+}
+.Choose_payments_mthd > p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.mainBod2H {
+  width: 100%;
+  height: 30px;
+  background-color: #c4c4c4;
+  padding-left: 30px;
+  padding-top: 2px;
+}
+.mainBod2H > p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.mainBod1m {
+  display: flex;
+  flex-direction: row;
+}
+.mainBod1m1 {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+.mainBod1m1 > button {
+  background-color: #fff;
+}
+.mainBod1m2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.mainBod1m2a > p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.mainBod1m2a1 {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mainBod1m2a1a {
+  display: flex;
+  flex-direction: row;
+}
+.mainBod1m2a1a > img {
+  width: 60px;
+  margin-left: 15px;
+}
+.mainBod1m2a1b > img {
+  width: 50px;
+  /* margin-left: 14px; */
+  margin-top: -20px;
+}
+.mainBod1m2a1b > input {
+  margin-top: 4px;
+}
+.mainBod1m2a1a > input {
+  border-radius: 100%;
+  margin-top: 4px;
+}
+
+.mainInp {
+  margin-top: 30px;
+  width: 350px;
+  height: 270px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: #f8f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card_number {
+  margin-left: 5px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+}
+.Card_of_name {
+  margin-left: 5px;
+  font-size: 14px;
+  text-align: left;
+  width: 90%;
+  height: 30px;
+  /* padding-left: 20px; */
+  font-weight: 700;
+}
+.expi {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.expi > p {
+  font-size: 14px;
+  margin-left: 15px;
+  font-weight: 700;
+}
+.expii {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.expii > input {
+  width: 40%;
+  height: 30px;
+  margin-left: 15px;
+  padding-left: 20px;
+}
+
+.paym {
+  border-bottom: 1.5px solid #eae4e4;
+  text-align: center;
+}
+.paym > p:nth-child(1) {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.paym > p:nth-child(2) {
+  /* margin-bottom: 50px; */
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.timer {
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 50%;
+  color: #282c34;
+}
+.note {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 100px;
+}
+.note > p {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.paytm {
+  width: 70px;
+  text-align: center;
+}
+
+
+
+/* ==============<<<<<<<<<<<All details csss>>>>>>>>>+============== */
+/* *{
+  font-family: 'Mulish', sans-serif;;
+}
+.checMain{
+  width:80%;
+  margin:auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+}
+.checMain1{
+  width:70%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 2%;
+}
+
+.checMain11{
+  display: flex;
+  flex-direction: column;
+}
+.checHead{
+  margin-bottom: 100px;
+}
+.checHead>p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.bikeIm{
+  height:200px;
+}
+.bikeIm>p{
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 45px;
+}
+
+.checMain2{
+  width:40%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px 10px 0 0; 
+  border-radius: 10px;
+}
+.checMain12{
+  padding-top: 50px;
+  padding: 10px;
+}
+.slotTi{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #252525;
+}
+
+.slotTi1{
+width:150px;
+
+}
+
+.slotTi1>p:nth-child(1){
+  font-size: 18px;
+  font-weight: 500;
+}
+.slotTi2>p:nth-child(1){
+  font-size: 18px;
+  font-weight: 500;
+}
+.slotTi3>p:nth-child(1){
+  font-size: 18px;
+  font-weight: 500;
+}
+.slotTi1>p:nth-child(2){
+  font-size: 13px;
+  font-weight: 500;
+}
+.slotTi3>p:nth-child(2){
+  font-size: 13px;
+  font-weight: 500;
+}
+.slotTi2{
+  width:150px;
+  text-align: center;
+}
+.slotTi2>p{
+  margin-top: 7%;
+}
+.slotTi3{
+width:150px;
+text-align: right;
+}
+
+.checLocat{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border-bottom: 2px solid #252525;
+  padding-bottom: 10px;
+}
+.checLocat>p{
+  font-size: 13px;
+}
+
+.checPri{
+  display: flex;
+  flex-direction: column;
+}
+.checPri1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checPri1>p{
+  font-size: 13px;
+}
+.checPri2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checPri2>p{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.checPri3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checPri3>P{
+font-size: 13px;
+}
+.checPri3>input{
+  border: 1px solid lightgray;
+  width:50px
+}
+
+.checPri4{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.checPri4>input{
+  border-bottom:2px solid lightgray;
+  width:65%
+}
+
+.checPri5{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.checPri5>p{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.checMain21{
+  margin-top: 30px;
+}
+.checMain21>p{
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.checMain22{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.checMain23{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.checMain24{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.checMain25{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.checMain26{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.checMain26>p{
+  font-size: 14px;
+  font-weight: 500;
+} */

@@ -3,6 +3,12 @@
     
   }
 
+  button{
+    border: 0.5px solid  #f1b826;
+    padding:1px 5px;
+    
+    }
+
   input{
    
     box-sizing: border-box;
@@ -210,7 +216,9 @@ padding-left: 10px;
 .hello {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
    height: 530px;
-   width: 280px;
+   width: 330px;
+   text-align: center;
+   padding: 10px auto;
 }
 .biHed{
     display: flex;
