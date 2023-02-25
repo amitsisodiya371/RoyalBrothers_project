@@ -86,11 +86,7 @@ export default function Nav() {
                 <Text >
                   What's New?
                 </Text>
-                {/* <div id="shop_hover">
-                <div id="first">
-                  <p><Link to="/offers">Store</Link></p>
-                </div>
-                </div> */}
+              
                 </Link>
               <img
                 style={{ height: "15px",fontWeight:"500px", marginTop: "19px", marginLeft: "10px" }}
